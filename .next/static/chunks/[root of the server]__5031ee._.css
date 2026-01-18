@@ -803,6 +803,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+.w-\[180px\] {
+  width: 180px;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -862,6 +866,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {

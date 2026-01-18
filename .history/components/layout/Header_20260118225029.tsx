@@ -53,7 +53,7 @@ const Header = () => {
           </nav>
 
           {/* Language Toggle & CTA Button */}
-          <div className="hidden md:flex items-center justify-end gap-4 w-[180px]">
+          <div className="hidden md:flex items-center gap-4">
             <button
               onClick={toggleLanguage}
               className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-300"
