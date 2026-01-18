@@ -598,16 +598,13 @@ const Hero = ()=>{
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h1, {
                             initial: {
-                                opacity: 0,
-                                y: 30
+                                opacity: 0
                             },
                             animate: {
-                                opacity: 1,
-                                y: 0
+                                opacity: 1
                             },
                             transition: {
-                                duration: 0.8,
-                                delay: 0.1
+                                duration: 0.5
                             },
                             className: "text-4xl md:text-6xl lg:text-7xl font-display font-medium text-primary-foreground leading-tight",
                             children: [
@@ -629,16 +626,14 @@ const Hero = ()=>{
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
                             initial: {
-                                opacity: 0,
-                                y: 30
+                                opacity: 0
                             },
                             animate: {
-                                opacity: 1,
-                                y: 0
+                                opacity: 1
                             },
                             transition: {
-                                duration: 0.8,
-                                delay: 0.2
+                                duration: 0.5,
+                                delay: 0.1
                             },
                             className: "mt-8 text-lg md:text-xl text-primary-foreground/70 max-w-2xl mx-auto leading-relaxed",
                             children: t("hero.description")
@@ -649,16 +644,14 @@ const Hero = ()=>{
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                             initial: {
-                                opacity: 0,
-                                y: 30
+                                opacity: 0
                             },
                             animate: {
-                                opacity: 1,
-                                y: 0
+                                opacity: 1
                             },
                             transition: {
-                                duration: 0.8,
-                                delay: 0.3
+                                duration: 0.5,
+                                delay: 0.2
                             },
                             className: "mt-12 flex flex-col sm:flex-row gap-4 justify-center",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -710,8 +703,8 @@ const Hero = ()=>{
                     opacity: 1
                 },
                 transition: {
-                    delay: 1,
-                    duration: 0.8
+                    delay: 0.6,
+                    duration: 0.5
                 },
                 className: "absolute bottom-8 left-1/2 -translate-x-1/2",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -804,18 +797,17 @@ const Services = ()=>{
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                     initial: {
-                        opacity: 0,
-                        y: 20
+                        opacity: 0
                     },
                     whileInView: {
-                        opacity: 1,
-                        y: 0
+                        opacity: 1
                     },
                     viewport: {
-                        once: true
+                        once: true,
+                        margin: "-50px"
                     },
                     transition: {
-                        duration: 0.6
+                        duration: 0.4
                     },
                     className: "text-center mb-16",
                     children: [
@@ -845,19 +837,18 @@ const Services = ()=>{
                     className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8",
                     children: services.map((service, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                             initial: {
-                                opacity: 0,
-                                y: 30
+                                opacity: 0
                             },
                             whileInView: {
-                                opacity: 1,
-                                y: 0
+                                opacity: 1
                             },
                             viewport: {
-                                once: true
+                                once: true,
+                                margin: "-30px"
                             },
                             transition: {
-                                duration: 0.6,
-                                delay: index * 0.1
+                                duration: 0.4,
+                                delay: index * 0.05
                             },
                             className: "group p-8 rounded-2xl bg-card border border-border hover:border-accent/30 transition-all duration-300 hover:shadow-card",
                             children: [
@@ -892,7 +883,7 @@ const Services = ()=>{
                                     columnNumber: 15
                                 }, this)
                             ]
-                        }, service.title, true, {
+                        }, index, true, {
                             fileName: "[project]/components/sections/Services.tsx",
                             lineNumber: 53,
                             columnNumber: 13
@@ -949,18 +940,17 @@ const Trust = ()=>{
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                         initial: {
-                            opacity: 0,
-                            x: -30
+                            opacity: 0
                         },
                         whileInView: {
-                            opacity: 1,
-                            x: 0
+                            opacity: 1
                         },
                         viewport: {
-                            once: true
+                            once: true,
+                            margin: "-50px"
                         },
                         transition: {
-                            duration: 0.6
+                            duration: 0.4
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -987,19 +977,18 @@ const Trust = ()=>{
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                         initial: {
-                            opacity: 0,
-                            x: 30
+                            opacity: 0
                         },
                         whileInView: {
-                            opacity: 1,
-                            x: 0
+                            opacity: 1
                         },
                         viewport: {
-                            once: true
+                            once: true,
+                            margin: "-50px"
                         },
                         transition: {
-                            duration: 0.6,
-                            delay: 0.2
+                            duration: 0.4,
+                            delay: 0.1
                         },
                         className: "bg-card rounded-2xl p-8 md:p-12 shadow-card",
                         children: [
@@ -1015,19 +1004,17 @@ const Trust = ()=>{
                                 className: "space-y-6",
                                 children: features.map((feature, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                                         initial: {
-                                            opacity: 0,
-                                            x: 20
+                                            opacity: 0
                                         },
                                         whileInView: {
-                                            opacity: 1,
-                                            x: 0
+                                            opacity: 1
                                         },
                                         viewport: {
                                             once: true
                                         },
                                         transition: {
-                                            duration: 0.4,
-                                            delay: 0.3 + index * 0.1
+                                            duration: 0.3,
+                                            delay: 0.15 + index * 0.05
                                         },
                                         className: "flex items-center gap-4",
                                         children: [
@@ -1047,7 +1034,7 @@ const Trust = ()=>{
                                                 columnNumber: 19
                                             }, this)
                                         ]
-                                    }, feature, true, {
+                                    }, index, true, {
                                         fileName: "[project]/components/sections/Trust.tsx",
                                         lineNumber: 48,
                                         columnNumber: 17
@@ -1119,18 +1106,17 @@ const CTA = ()=>{
                 className: "container mx-auto px-6 relative z-10",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                     initial: {
-                        opacity: 0,
-                        y: 30
+                        opacity: 0
                     },
                     whileInView: {
-                        opacity: 1,
-                        y: 0
+                        opacity: 1
                     },
                     viewport: {
-                        once: true
+                        once: true,
+                        margin: "-50px"
                     },
                     transition: {
-                        duration: 0.6
+                        duration: 0.4
                     },
                     className: "max-w-3xl mx-auto text-center",
                     children: [
@@ -1152,19 +1138,17 @@ const CTA = ()=>{
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                             initial: {
-                                opacity: 0,
-                                y: 20
+                                opacity: 0
                             },
                             whileInView: {
-                                opacity: 1,
-                                y: 0
+                                opacity: 1
                             },
                             viewport: {
                                 once: true
                             },
                             transition: {
-                                duration: 0.6,
-                                delay: 0.2
+                                duration: 0.4,
+                                delay: 0.1
                             },
                             className: "mt-10",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
