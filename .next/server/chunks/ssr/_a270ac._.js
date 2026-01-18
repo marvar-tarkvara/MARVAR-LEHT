@@ -175,7 +175,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$pages$2f$Conta
 ;
 ;
 const metadata = {
-    title: "Kontakt - MarVariks",
+    title: "Kontakt - MarVar",
     description: "Oleme valmis kuulama teie ideid ja leidma parima lahenduse teie ettevõttele."
 };
 function ContactPage() {
