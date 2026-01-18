@@ -22,9 +22,10 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-3">
+            <img src="/logo.svg" alt="MarVariks logo" className="h-10 w-auto" />
             <span className="text-2xl font-display font-semibold text-foreground">
-              Veebi<span className="text-accent">Stuudio</span>
+              Mar<span className="text-accent">Variks</span>
             </span>
           </Link>
 
