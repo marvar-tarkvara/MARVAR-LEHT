@@ -6,9 +6,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import Layout from "@/components/layout/Layout";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
   const { toast } = useToast();
+  const { t } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -25,8 +27,8 @@ const Contact = () => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
     toast({
-      title: "Sõnum saadetud!",
-      description: "Võtame teiega ühendust esimesel võimalusel.",
+      title: t("contact.form.success"),
+      description: t("contact.form.successDescription"),
     });
 
     setFormData({ name: "", email: "", company: "", message: "" });
@@ -51,15 +53,13 @@ const Contact = () => {
             className="max-w-3xl"
           >
             <span className="inline-block px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-medium mb-8">
-              Kontakt
+              {t("nav.contact")}
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-medium text-primary-foreground leading-tight">
-              Alustame{" "}
-              <span className="text-gradient-accent">vestlust</span>
+              {t("contact.title")}
             </h1>
             <p className="mt-8 text-lg text-primary-foreground/70 leading-relaxed">
-              Rääkige meile oma projektist ja me võtame teiega ühendust 24 tunni jooksul. 
-              Esmane konsultatsioon on tasuta.
+              {t("contact.subtitle")}
             </p>
           </motion.div>
         </div>
@@ -76,15 +76,16 @@ const Contact = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-2xl md:text-3xl font-display font-medium mb-8">
-                Kirjeldage oma projekti
+              <h2 className="text-2xl md:text-3xl font-display font-medium mb-4">
+                {t("contact.form.title")}
               </h2>
+              <p className="text-muted-foreground mb-8">{t("contact.form.description")}</p>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">
-                      Nimi *
+                      {t("contact.form.name")} *
                     </label>
                     <Input
                       id="name"
@@ -93,13 +94,13 @@ const Contact = () => {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="Teie nimi"
+                      placeholder={t("contact.form.namePlaceholder")}
                       className="h-12"
                     />
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium mb-2">
-                      E-post *
+                      {t("contact.form.email")} *
                     </label>
                     <Input
                       id="email"
@@ -108,7 +109,7 @@ const Contact = () => {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="teie@email.ee"
+                      placeholder={t("contact.form.emailPlaceholder")}
                       className="h-12"
                     />
                   </div>
@@ -116,7 +117,7 @@ const Contact = () => {
 
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium mb-2">
-                    Ettevõte (valikuline)
+                    {t("contact.form.company")}
                   </label>
                   <Input
                     id="company"
@@ -124,14 +125,14 @@ const Contact = () => {
                     type="text"
                     value={formData.company}
                     onChange={handleChange}
-                    placeholder="Teie ettevõtte nimi"
+                    placeholder={t("contact.form.companyPlaceholder")}
                     className="h-12"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-2">
-                    Projekti kirjeldus *
+                    {t("contact.form.message")} *
                   </label>
                   <Textarea
                     id="message"
@@ -139,7 +140,7 @@ const Contact = () => {
                     required
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Kirjeldage oma projekti, eesmärke ja soove..."
+                    placeholder={t("contact.form.messagePlaceholder")}
                     className="min-h-[160px] resize-none"
                   />
                 </div>
@@ -152,18 +153,14 @@ const Contact = () => {
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
-                    "Saadan..."
+                    "..."
                   ) : (
                     <>
-                      Saada päring
+                      {t("contact.form.submit")}
                       <Send className="w-4 h-4 ml-2" />
                     </>
                   )}
                 </Button>
-
-                <p className="text-sm text-muted-foreground text-center">
-                  Vastame kõikidele päringutele 24 tunni jooksul.
-                </p>
               </form>
             </motion.div>
 
@@ -176,7 +173,7 @@ const Contact = () => {
               className="lg:pl-8"
             >
               <h2 className="text-2xl md:text-3xl font-display font-medium mb-8">
-                Kontaktandmed
+                {t("contact.info.title")}
               </h2>
 
               <div className="space-y-8">
@@ -185,12 +182,12 @@ const Contact = () => {
                     <Mail className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">E-post</h3>
+                    <h3 className="font-semibold mb-1">{t("contact.info.email")}</h3>
                     <a
-                      href="mailto:info@veebistuudio.ee"
+                      href="mailto:info@marvariks.ee"
                       className="text-muted-foreground hover:text-accent transition-colors"
                     >
-                      info@veebistuudio.ee
+                      info@marvariks.ee
                     </a>
                   </div>
                 </div>
@@ -200,7 +197,7 @@ const Contact = () => {
                     <Phone className="w-5 h-5 text-teal" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Telefon</h3>
+                    <h3 className="font-semibold mb-1">{t("contact.info.phone")}</h3>
                     <a
                       href="tel:+3725551234"
                       className="text-muted-foreground hover:text-teal transition-colors"
@@ -215,7 +212,7 @@ const Contact = () => {
                     <MapPin className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Asukoht</h3>
+                    <h3 className="font-semibold mb-1">{t("contact.info.location")}</h3>
                     <p className="text-muted-foreground">
                       Tallinn, Eesti
                     </p>
@@ -226,19 +223,19 @@ const Contact = () => {
               {/* FAQ */}
               <div className="mt-12 p-8 bg-secondary rounded-2xl">
                 <h3 className="font-display font-medium text-xl mb-4">
-                  Korduma kippuvad küsimused
+                  {t("contact.faq.title")}
                 </h3>
                 <div className="space-y-4 text-sm">
                   <div>
-                    <p className="font-medium">Kui kaua veebilehe tegemine aega võtab?</p>
+                    <p className="font-medium">{t("contact.faq.q1")}</p>
                     <p className="text-muted-foreground mt-1">
-                      Tüüpiline projekt kestab 4-8 nädalat, sõltuvalt mahust.
+                      {t("contact.faq.a1")}
                     </p>
                   </div>
                   <div>
-                    <p className="font-medium">Mis on hinna vahemik?</p>
+                    <p className="font-medium">{t("contact.faq.q2")}</p>
                     <p className="text-muted-foreground mt-1">
-                      Hinnad algavad 1500€, täpse pakkumise teeme pärast konsultatsiooni.
+                      {t("contact.faq.a2")}
                     </p>
                   </div>
                 </div>

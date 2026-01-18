@@ -1,30 +1,33 @@
 import { motion } from "framer-motion";
 import { Monitor, Palette, Zap, LineChart } from "lucide-react";
-
-const services = [
-  {
-    icon: Monitor,
-    title: "Veebilehed",
-    description: "Kaasaegsed ja kasutajasõbralikud veebilehed, mis toimivad igal seadmel.",
-  },
-  {
-    icon: Palette,
-    title: "UI/UX Disain",
-    description: "Läbimõeldud kasutajakogemus ja visuaalselt kõnekas disain.",
-  },
-  {
-    icon: Zap,
-    title: "Optimeerimine",
-    description: "Kiire laadimine ja tehniline optimeerimine parimate tulemuste nimel.",
-  },
-  {
-    icon: LineChart,
-    title: "SEO",
-    description: "Otsingumootoritele optimeeritud lahendused nähtavuse tõstmiseks.",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Services = () => {
+  const { t } = useLanguage();
+
+  const services = [
+    {
+      icon: Monitor,
+      title: t("services.web.title"),
+      description: t("services.web.description"),
+    },
+    {
+      icon: Palette,
+      title: t("services.design.title"),
+      description: t("services.design.description"),
+    },
+    {
+      icon: Zap,
+      title: t("services.seo.title"),
+      description: t("services.seo.description"),
+    },
+    {
+      icon: LineChart,
+      title: t("services.maintenance.title"),
+      description: t("services.maintenance.description"),
+    },
+  ];
+
   return (
     <section className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
@@ -36,11 +39,10 @@ const Services = () => {
           className="text-center mb-16"
         >
           <span className="text-teal text-sm font-medium uppercase tracking-wider">
-            Teenused
+            {t("services.title")}
           </span>
           <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-display font-medium">
-            Kõik, mida vajate{" "}
-            <span className="text-gradient-teal">edu saavutamiseks</span>
+            {t("services.subtitle")}
           </h2>
         </motion.div>
 

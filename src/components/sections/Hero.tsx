@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-dark">
       {/* Background Pattern */}
@@ -26,7 +29,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-medium mb-8">
-              Professionaalne veebiarendus
+              {t("hero.title").split(" ")[0]}
             </span>
           </motion.div>
 
@@ -36,8 +39,8 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-4xl md:text-6xl lg:text-7xl font-display font-medium text-primary-foreground leading-tight"
           >
-            Loome veebilehti, mis{" "}
-            <span className="text-gradient-accent">müüvad</span>
+            {t("hero.title")}{" "}
+            <span className="text-gradient-accent">{t("hero.titleHighlight")}</span>
           </motion.h1>
 
           <motion.p
@@ -46,8 +49,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mt-8 text-lg md:text-xl text-primary-foreground/70 max-w-2xl mx-auto leading-relaxed"
           >
-            Aitame ettevõtetel luua veebilehti, mis jätavad kestva mulje ja 
-            muudavad külastajad klientideks. Kvaliteet. Disain. Tulemused.
+            {t("hero.description")}
           </motion.p>
 
           <motion.div
@@ -58,12 +60,12 @@ const Hero = () => {
           >
             <Button variant="hero" asChild>
               <Link to="/kontakt">
-                Küsi pakkumist
+                {t("hero.cta")}
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>
             <Button variant="heroOutline" asChild>
-              <Link to="/portfolio">Vaata töid</Link>
+              <Link to="/portfolio">{t("hero.secondary")}</Link>
             </Button>
           </motion.div>
         </div>
