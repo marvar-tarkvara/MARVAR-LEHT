@@ -1,29 +1,31 @@
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
-
-const trustPoints = [
-  {
-    number: "50+",
-    label: "Teostatud projekti",
-  },
-  {
-    number: "8+",
-    label: "Aastat kogemust",
-  },
-  {
-    number: "100%",
-    label: "Rahulolevaid kliente",
-  },
-];
-
-const features = [
-  "Personaalne lähenemine igale projektile",
-  "Läbipaistev hinnakujundus",
-  "Tähtaegadest kinnipidamine",
-  "Pikaajaline tugi ja hooldus",
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Trust = () => {
+  const { t } = useLanguage();
+
+  const trustPoints = [
+    {
+      number: "50+",
+      label: t("trust.stat.projects"),
+    },
+    {
+      number: "8+",
+      label: t("trust.stat.years"),
+    },
+    {
+      number: "100%",
+      label: t("trust.stat.clients"),
+    },
+  ];
+
+  const features = [
+    t("trust.experience.description"),
+    t("trust.quality.description"),
+    t("trust.results.description"),
+  ];
+
   return (
     <section className="py-24 md:py-32 bg-secondary">
       <div className="container mx-auto px-6">
@@ -36,16 +38,11 @@ const Trust = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="text-accent text-sm font-medium uppercase tracking-wider">
-              Miks valida meid
+              {t("trust.title")}
             </span>
             <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-display font-medium leading-tight">
-              Usaldusväärne partner{" "}
-              <span className="text-gradient-accent">digis</span>
+              {t("trust.subtitle")}
             </h2>
-            <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-              Meie missioon on aidata ettevõtetel luua veebikeskkond, mis peegeldab nende väärtusi 
-              ja aitab saavutada ärilisi eesmärke.
-            </p>
 
             <div className="mt-10 grid grid-cols-3 gap-8">
               {trustPoints.map((point, index) => (
@@ -77,7 +74,7 @@ const Trust = () => {
             className="bg-card rounded-2xl p-8 md:p-12 shadow-card"
           >
             <h3 className="text-2xl font-display font-medium mb-8">
-              Meie lubadus
+              {t("trust.experience.title")}
             </h3>
             <div className="space-y-6">
               {features.map((feature, index) => (

@@ -2,59 +2,74 @@ import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import CTA from "@/components/sections/CTA";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const projects = [
   {
     id: 1,
     title: "TechStart OÜ",
-    category: "E-kaubandus",
-    description: "Modernne e-pood koos täiusliku kasutajakogemusega. Konversioonimäär tõusis 47%.",
+    category: "E-commerce",
+    categoryEt: "E-kaubandus",
+    description: "Modern e-shop with excellent user experience. Conversion rate increased by 47%.",
+    descriptionEt: "Modernne e-pood koos täiusliku kasutajakogemusega. Konversioonimäär tõusis 47%.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
     color: "accent",
   },
   {
     id: 2,
     title: "Nordic Design",
-    category: "Brändi veebileht",
-    description: "Minimalistlik portfoolioleht disainistuudiole. Fookuses visuaalne storytelling.",
+    category: "Brand Website",
+    categoryEt: "Brändi veebileht",
+    description: "Minimalist portfolio page for a design studio. Focus on visual storytelling.",
+    descriptionEt: "Minimalistlik portfoolioleht disainistuudiole. Fookuses visuaalne storytelling.",
     image: "https://images.unsplash.com/photo-1522542550221-31fd8575f3f0?w=800&h=600&fit=crop",
     color: "teal",
   },
   {
     id: 3,
     title: "GreenTech Solutions",
-    category: "Äri veebileht",
-    description: "Innovatiivne veebileht keskkonnaettevõttele. Interaktiivne teenuste esitlus.",
+    category: "Business Website",
+    categoryEt: "Äri veebileht",
+    description: "Innovative website for an environmental company. Interactive service presentation.",
+    descriptionEt: "Innovatiivne veebileht keskkonnaettevõttele. Interaktiivne teenuste esitlus.",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop",
     color: "accent",
   },
   {
     id: 4,
     title: "Resto Maitsed",
-    category: "Restorani veebileht",
-    description: "Elegantne veebileht restoranile koos menüü ja broneerimissüsteemiga.",
+    category: "Restaurant Website",
+    categoryEt: "Restorani veebileht",
+    description: "Elegant website for a restaurant with menu and booking system.",
+    descriptionEt: "Elegantne veebileht restoranile koos menüü ja broneerimissüsteemiga.",
     image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop",
     color: "teal",
   },
   {
     id: 5,
     title: "Fintech Pro",
-    category: "SaaS platvorm",
-    description: "Kasutajasõbralik finantsteenuste platvorm. Intuitive dashboard ja raportid.",
+    category: "SaaS Platform",
+    categoryEt: "SaaS platvorm",
+    description: "User-friendly financial services platform. Intuitive dashboard and reports.",
+    descriptionEt: "Kasutajasõbralik finantsteenuste platvorm. Intuitive dashboard ja raportid.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
     color: "accent",
   },
   {
     id: 6,
     title: "WellBeing Clinic",
-    category: "Meditsiini veebileht",
-    description: "Usaldust tekitav veebileht tervishoiuasutusele. Online broneerimise võimalus.",
+    category: "Medical Website",
+    categoryEt: "Meditsiini veebileht",
+    description: "Trust-building website for a healthcare facility. Online booking option.",
+    descriptionEt: "Usaldust tekitav veebileht tervishoiuasutusele. Online broneerimise võimalus.",
     image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=600&fit=crop",
     color: "teal",
   },
 ];
 
 const Portfolio = () => {
+  const { t, language } = useLanguage();
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -67,15 +82,13 @@ const Portfolio = () => {
             className="max-w-3xl"
           >
             <span className="inline-block px-4 py-2 rounded-full bg-teal/10 text-teal text-sm font-medium mb-8">
-              Portfoolio
+              {t("nav.portfolio")}
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-medium text-primary-foreground leading-tight">
-              Meie{" "}
-              <span className="text-gradient-teal">tehtud tööd</span>
+              {t("portfolio.title")}
             </h1>
             <p className="mt-8 text-lg text-primary-foreground/70 leading-relaxed">
-              Iga projekt on ainulaadne väljakutse. Siin on valik meie töödest, mis demonstreerivad 
-              meie lähenemist ja võimekust.
+              {t("portfolio.subtitle")}
             </p>
           </motion.div>
         </div>
@@ -108,13 +121,13 @@ const Portfolio = () => {
                 </div>
                 <div className="mt-6">
                   <span className={`text-sm font-medium ${project.color === 'accent' ? 'text-accent' : 'text-teal'}`}>
-                    {project.category}
+                    {language === "et" ? project.categoryEt : project.category}
                   </span>
                   <h3 className="mt-2 text-xl font-semibold group-hover:text-accent transition-colors">
                     {project.title}
                   </h3>
                   <p className="mt-2 text-muted-foreground leading-relaxed">
-                    {project.description}
+                    {language === "et" ? project.descriptionEt : project.description}
                   </p>
                 </div>
               </motion.div>

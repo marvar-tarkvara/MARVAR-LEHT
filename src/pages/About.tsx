@@ -1,27 +1,35 @@
 import { motion } from "framer-motion";
-import { Target, Heart, Award } from "lucide-react";
+import { Target, Heart, Award, Lightbulb } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import CTA from "@/components/sections/CTA";
-
-const values = [
-  {
-    icon: Target,
-    title: "Eesmärgipärasus",
-    description: "Iga projekt algab selge eesmärgiga. Mõistame teie äri ja loome lahenduse, mis toetab teie kasvu.",
-  },
-  {
-    icon: Heart,
-    title: "Kirg kvaliteedi vastu",
-    description: "Ei tee kompromisse detailide osas. Iga piksel, iga interaktsioon on läbimõeldud.",
-  },
-  {
-    icon: Award,
-    title: "Tulemustele orienteeritus",
-    description: "Veebileht pole eesmärk omaette – see on tööriist, mis peab tooma teile tulemusi.",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const About = () => {
+  const { t } = useLanguage();
+
+  const values = [
+    {
+      icon: Target,
+      title: t("about.values.quality.title"),
+      description: t("about.values.quality.description"),
+    },
+    {
+      icon: Heart,
+      title: t("about.values.transparency.title"),
+      description: t("about.values.transparency.description"),
+    },
+    {
+      icon: Lightbulb,
+      title: t("about.values.innovation.title"),
+      description: t("about.values.innovation.description"),
+    },
+    {
+      icon: Award,
+      title: t("about.values.partnership.title"),
+      description: t("about.values.partnership.description"),
+    },
+  ];
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -34,16 +42,11 @@ const About = () => {
             className="max-w-3xl"
           >
             <span className="inline-block px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-medium mb-8">
-              Meist
+              {t("about.title")}
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-medium text-primary-foreground leading-tight">
-              Loome veebilehti, millega olete{" "}
-              <span className="text-gradient-accent">uhke</span>
+              {t("about.subtitle")}
             </h1>
-            <p className="mt-8 text-lg text-primary-foreground/70 leading-relaxed">
-              Oleme väike, kuid ambitsioonikas meeskond, kes usub, et hea veebileht on rohkem kui 
-              lihtsalt ilus fassaad – see on strateegiline tööriist, mis aitab teil oma eesmärke saavutada.
-            </p>
           </motion.div>
         </div>
       </section>
@@ -59,22 +62,11 @@ const About = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-4xl font-display font-medium mb-6">
-                Meie lugu
+                {t("about.story.title")}
               </h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p>
-                  VeebiStuudio sai alguse lihtsast ideest: pakkuda ettevõtetele veebilahendusi, 
-                  mis on sama kvaliteetsed kui suured agentuurid, kuid ilma keerulise bürokraatia ja 
-                  kõrgete hindadeta.
-                </p>
-                <p>
-                  Aastate jooksul oleme kasvanud usaldusväärseks partneriks paljudele ettevõtetele, 
-                  kes väärtustavad läbimõeldud disaini ja tehnilist kvaliteeti.
-                </p>
-                <p>
-                  Usume, et parim veebileht on selline, mis on loodud koostöös kliendiga, mõistes 
-                  tema vajadusi, eesmärke ja sihtrühma.
-                </p>
+                <p>{t("about.story.p1")}</p>
+                <p>{t("about.story.p2")}</p>
               </div>
             </motion.div>
 
@@ -88,19 +80,19 @@ const About = () => {
               <div className="grid grid-cols-2 gap-8">
                 <div>
                   <div className="text-4xl font-display font-semibold text-accent">8+</div>
-                  <p className="mt-2 text-muted-foreground">aastat kogemust</p>
+                  <p className="mt-2 text-muted-foreground">{t("trust.stat.years")}</p>
                 </div>
                 <div>
                   <div className="text-4xl font-display font-semibold text-teal">50+</div>
-                  <p className="mt-2 text-muted-foreground">projekti teostatud</p>
+                  <p className="mt-2 text-muted-foreground">{t("trust.stat.projects")}</p>
                 </div>
                 <div>
                   <div className="text-4xl font-display font-semibold text-accent">100%</div>
-                  <p className="mt-2 text-muted-foreground">pühendumust</p>
+                  <p className="mt-2 text-muted-foreground">{t("trust.stat.clients")}</p>
                 </div>
                 <div>
                   <div className="text-4xl font-display font-semibold text-teal">24/7</div>
-                  <p className="mt-2 text-muted-foreground">tugi ja hooldus</p>
+                  <p className="mt-2 text-muted-foreground">{t("services.maintenance.title")}</p>
                 </div>
               </div>
             </motion.div>
@@ -119,11 +111,11 @@ const About = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-medium">
-              Meie <span className="text-gradient-teal">väärtused</span>
+              {t("about.values.title")}
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <motion.div
                 key={value.title}
