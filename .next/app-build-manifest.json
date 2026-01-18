@@ -1,15 +1,15 @@
 {
   "pages": {
-    "/kontakt/page": [
+    "/page": [
       "static/chunks/[root of the server]__5031ee._.css",
       "static/chunks/node_modules_9600c5._.js",
       "static/chunks/_d5bd10._.js",
       "static/chunks/app_layout_tsx_61af54._.js",
       "static/chunks/_d90156._.js",
       "static/chunks/app_not-found_tsx_1de7f4._.js",
-      "static/chunks/node_modules_db5bff._.js",
-      "static/chunks/_15176a._.js",
-      "static/chunks/app_kontakt_page_tsx_1de7f4._.js",
+      "static/chunks/node_modules_f31974._.js",
+      "static/chunks/_b10e8a._.js",
+      "static/chunks/app_page_tsx_1de7f4._.js",
       "static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js",
       "static/chunks/node_modules_next_dist_compiled_107ce8._.js",
       "static/chunks/node_modules_next_dist_client_523921._.js",

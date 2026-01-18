@@ -175,7 +175,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$pages$2f$About
 ;
 ;
 const metadata = {
-    title: "Meist - MarVariks",
+    title: "Meist - MarVar",
     description: "Oleme väike, kuid pühendunud meeskond, kes usub, et hea veebileht on rohkem kui lihtsalt ilus disain."
 };
 function AboutPage() {
