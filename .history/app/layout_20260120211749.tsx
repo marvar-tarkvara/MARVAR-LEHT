@@ -55,10 +55,10 @@ export const metadata: Metadata = {
     description: "Professionaalsed ja konversioonile suunatud veebilehed, mis aitavad teie ettevõttel kasvada. Minimalistlik disain, maksimaalne mõju.",
     images: [
       {
-        url: "/marvar-tarkvara.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "MARVAR Tarkvara OÜ - Veebilehtede loomine",
+        alt: "MarVar - Veebilehtede loomine",
       },
     ],
   },
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MarVar - Veebilehtede loomine",
     description: "Professionaalsed ja konversioonile suunatud veebilehed, mis aitavad teie ettevõttel kasvada.",
-    images: ["/marvar-tarkvara.png"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,

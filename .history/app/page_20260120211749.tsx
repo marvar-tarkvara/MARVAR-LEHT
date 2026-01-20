@@ -16,7 +16,7 @@ export default function Home() {
             name: "MARVAR Tarkvara OÜ",
             alternateName: "MarVar",
             url: "https://marvar.ee",
-            logo: "https://marvar.ee/marvar-tarkvara.png",
+            logo: "https://marvar.ee/marvar.svg",
             email: "info@marvar.ee",
             address: {
               "@type": "PostalAddress",
@@ -52,7 +52,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "MARVAR Tarkvara OÜ",
-            image: "https://marvar.ee/marvar-tarkvara.png",
+            image: "https://marvar.ee/marvar.svg",
             email: "info@marvar.ee",
             address: {
               "@type": "PostalAddress",

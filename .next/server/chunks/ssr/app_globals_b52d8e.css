@@ -656,16 +656,16 @@ h1, h2, h3, h4, h5, h6 {
   width: 24rem;
 }
 
+.w-\[180px\] {
+  width: 180px;
+}
+
 .w-auto {
   width: auto;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[180px\] {
-  width: 180px;
 }
 
 .max-w-2xl {
@@ -1639,6 +1639,10 @@ h1, h2, h3, h4, h5, h6 {
   .md\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+
+  .md\:text-right {
+    text-align: right;
   }
 
   .md\:text-3xl {

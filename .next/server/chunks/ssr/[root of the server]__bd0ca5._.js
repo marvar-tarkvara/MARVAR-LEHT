@@ -231,11 +231,79 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tooltip$
 ;
 ;
 const metadata = {
-    title: "MarVar - Veebilehtede loomine",
-    description: "Professionaalsed ja konversioonile suunatud veebilehed, mis aitavad teie ettevõttel kasvada. Minimalistlik disain, maksimaalne mõju.",
+    metadataBase: new URL("https://marvar.ee"),
+    title: {
+        default: "MarVar - Veebilehtede loomine | Professionaalne veebiarendus Eestis",
+        template: "%s | MarVar"
+    },
+    description: "Professionaalsed ja konversioonile suunatud veebilehed, mis aitavad teie ettevõttel kasvada. Minimalistlik disain, maksimaalne mõju. MARVAR Tarkvara OÜ - Tallinn, Eesti.",
+    keywords: [
+        "veebilehtede loomine",
+        "veebiarendus",
+        "kodulehtede tegemine",
+        "veebidisain",
+        "web development",
+        "Tallinn",
+        "Eesti",
+        "responsive design",
+        "SEO",
+        "ettevõtte veebileht"
+    ],
+    authors: [
+        {
+            name: "MARVAR Tarkvara OÜ"
+        }
+    ],
+    creator: "MARVAR Tarkvara OÜ",
+    publisher: "MARVAR Tarkvara OÜ",
+    formatDetection: {
+        email: false,
+        address: false,
+        telephone: false
+    },
     icons: {
         icon: "/marvar.svg",
         apple: "/marvar.svg"
+    },
+    openGraph: {
+        type: "website",
+        locale: "et_EE",
+        url: "https://marvar.ee",
+        siteName: "MarVar",
+        title: "MarVar - Veebilehtede loomine | Professionaalne veebiarendus",
+        description: "Professionaalsed ja konversioonile suunatud veebilehed, mis aitavad teie ettevõttel kasvada. Minimalistlik disain, maksimaalne mõju.",
+        images: [
+            {
+                url: "/marvar-tarkvara.png",
+                width: 1200,
+                height: 630,
+                alt: "MARVAR Tarkvara OÜ - Veebilehtede loomine"
+            }
+        ]
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "MarVar - Veebilehtede loomine",
+        description: "Professionaalsed ja konversioonile suunatud veebilehed, mis aitavad teie ettevõttel kasvada.",
+        images: [
+            "/marvar-tarkvara.png"
+        ]
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1
+        }
+    },
+    alternates: {
+        canonical: "https://marvar.ee"
+    },
+    verification: {
     }
 };
 function RootLayout({ children }) {
@@ -250,28 +318,28 @@ function RootLayout({ children }) {
                         children,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$toaster$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Toaster"], {}, void 0, false, {
                             fileName: "[project]/app/layout.tsx",
-                            lineNumber: 38,
+                            lineNumber: 102,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/layout.tsx",
-                    lineNumber: 36,
+                    lineNumber: 100,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/layout.tsx",
-                lineNumber: 35,
+                lineNumber: 99,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 34,
+            lineNumber: 98,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 33,
+        lineNumber: 97,
         columnNumber: 5
     }, this);
 }
