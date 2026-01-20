@@ -238,16 +238,58 @@ const metadata = {
     },
     description: "Professionaalsed ja konversioonile suunatud veebilehed, mis aitavad teie ettevõttel kasvada. Minimalistlik disain, maksimaalne mõju. MARVAR Tarkvara OÜ - Tallinn, Eesti.",
     keywords: [
+        // Estonian keywords
         "veebilehtede loomine",
         "veebiarendus",
         "kodulehtede tegemine",
+        "kodulehe loomine",
         "veebidisain",
-        "web development",
+        "veebilehe tellimine",
+        "professionaalne veebileht",
+        "ettevõtte veebileht",
+        "firma koduleht",
+        "e-poe loomine",
+        "mobiilisõbralik veebileht",
+        "SEO optimeerimine",
+        "otsingumootori optimeerimine",
+        "veebilehe hooldus",
+        "WordPress arendus",
+        "React arendus",
+        "Next.js arendus",
+        "tarkvaraarendus",
+        "veebirakendused",
+        "UI/UX disain",
+        "kasutajakogemus",
+        "konversioonile suunatud disain",
+        "landing page",
+        "maandumisleht",
         "Tallinn",
         "Eesti",
-        "responsive design",
-        "SEO",
-        "ettevõtte veebileht"
+        "Harjumaa",
+        "MARVAR",
+        "marvar tarkvara",
+        "MARVAR Tarkvara OÜ",
+        // English keywords
+        "web development Estonia",
+        "website design Tallinn",
+        "web developer Estonia",
+        "custom website development",
+        "professional web design",
+        "responsive web design",
+        "mobile-friendly websites",
+        "SEO optimization Estonia",
+        "e-commerce development",
+        "business website",
+        "corporate website design",
+        "web agency Estonia",
+        "software development Estonia",
+        "React developer Estonia",
+        "Next.js developer",
+        "frontend development",
+        "modern web design",
+        "conversion-focused design",
+        "UX design Estonia",
+        "Estonian web agency"
     ],
     authors: [
         {
@@ -318,28 +360,28 @@ function RootLayout({ children }) {
                         children,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$toaster$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Toaster"], {}, void 0, false, {
                             fileName: "[project]/app/layout.tsx",
-                            lineNumber: 102,
+                            lineNumber: 144,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/layout.tsx",
-                    lineNumber: 100,
+                    lineNumber: 142,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/layout.tsx",
-                lineNumber: 99,
+                lineNumber: 141,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 98,
+            lineNumber: 140,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 97,
+        lineNumber: 139,
         columnNumber: 5
     }, this);
 }
