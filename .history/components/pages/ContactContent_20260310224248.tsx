@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, Mail, Phone, MapPin } from "lucide-react";
+import { Send, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -24,16 +24,33 @@ const ContactContent = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const response = await fetch("", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    toast({
-      title: t("contact.form.success"),
-      description: t("contact.form.successDescription"),
-    });
-
-    setFormData({ name: "", email: "", company: "", message: "" });
-    setIsSubmitting(false);
+      if (response.ok) {
+        toast({
+          title: t("contact.form.success"),
+          description: t("contact.form.successDescription"),
+        });
+        setFormData({ name: "", email: "", company: "", message: "" });
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -48,9 +65,9 @@ const ContactContent = () => {
       <section className="py-24 md:py-32 bg-gradient-dark">
         <div className="container mx-auto px-6">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
             className="max-w-3xl"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-medium text-primary-foreground leading-tight">
@@ -69,10 +86,10 @@ const ContactContent = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Form */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.4 }}
             >
               <h2 className="text-2xl md:text-3xl font-display font-medium mb-4">
                 {t("contact.form.title")}
@@ -164,10 +181,10 @@ const ContactContent = () => {
 
             {/* Contact Info */}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.4, delay: 0.1 }}
               className="lg:pl-8"
             >
               <h2 className="text-2xl md:text-3xl font-display font-medium mb-8">
@@ -186,21 +203,6 @@ const ContactContent = () => {
                       className="text-muted-foreground hover:text-accent transition-colors"
                     >
                       info@marvar.ee
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-5 h-5 text-teal" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-1">{t("contact.info.phone")}</h3>
-                    <a
-                      href="tel:+3725551234"
-                      className="text-muted-foreground hover:text-teal transition-colors"
-                    >
-                      +372 555 1234
                     </a>
                   </div>
                 </div>
