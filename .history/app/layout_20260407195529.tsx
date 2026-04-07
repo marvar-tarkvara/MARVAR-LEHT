@@ -137,6 +137,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="et" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/marvar.svg" />
+      </head>
       <body className={`${inter.variable} ${playfair.variable} antialiased`}>
         <LanguageProvider>
           <TooltipProvider>
