@@ -43,3 +43,7 @@ coverage/
 *.temp
 *.bak
 *~
+
+# AI prompt/instruction docs
+[Cc][Ll][Aa][Uu][Dd][Ee]*.md
+[Cc][Aa][Ll][Uu][Dd][Ee]*.md
