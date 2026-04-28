@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Monitor, Palette, Zap, LineChart } from "lucide-react";
+import { Monitor, Zap, LineChart } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Services = () => {
@@ -12,11 +12,6 @@ const Services = () => {
       icon: Monitor,
       title: t("services.web.title"),
       description: t("services.web.description"),
-    },
-    {
-      icon: Palette,
-      title: t("services.design.title"),
-      description: t("services.design.description"),
     },
     {
       icon: Zap,
@@ -48,7 +43,7 @@ const Services = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}

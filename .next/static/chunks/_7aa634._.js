@@ -136,6 +136,7 @@ const Header = ()=>{
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: "/",
+                            className: "flex-shrink-0 w-[180px]",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 src: "/marvar-tarkvara.svg",
                                 alt: "MarVar logo",
@@ -153,7 +154,7 @@ const Header = ()=>{
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                            className: "hidden md:flex items-center gap-8",
+                            className: "hidden md:flex items-center justify-center gap-8 flex-1",
                             children: navLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     href: link.href,
                                     className: `text-sm font-medium transition-colors duration-300 ${isActive(link.href) ? "text-accent" : "text-muted-foreground hover:text-foreground"}`,
@@ -169,7 +170,7 @@ const Header = ()=>{
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "hidden md:flex items-center gap-4",
+                            className: "hidden md:flex items-center justify-end gap-4 w-[180px]",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: toggleLanguage,
@@ -524,20 +525,45 @@ const Footer = ()=>{
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "mt-16 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-sm text-primary-foreground/50",
-                        children: [
-                            "© ",
-                            new Date().getFullYear(),
-                            " MarVar. ",
-                            t("footer.rights")
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/layout/Footer.tsx",
-                        lineNumber: 53,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-sm text-primary-foreground/50",
+                            children: [
+                                "© ",
+                                new Date().getFullYear(),
+                                " MarVar. ",
+                                t("footer.rights")
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/layout/Footer.tsx",
+                            lineNumber: 53,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "text-sm text-primary-foreground/50 text-center md:text-right",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "MARVAR Tarkvara OÜ"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/layout/Footer.tsx",
+                                    lineNumber: 57,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "Registrikood: 17402292"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/layout/Footer.tsx",
+                                    lineNumber: 58,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/layout/Footer.tsx",
+                            lineNumber: 56,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/components/layout/Footer.tsx",
                     lineNumber: 52,
                     columnNumber: 9
@@ -606,18 +632,17 @@ const CTA = ()=>{
                 className: "container mx-auto px-6 relative z-10",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                     initial: {
-                        opacity: 0,
-                        y: 30
+                        opacity: 0
                     },
                     whileInView: {
-                        opacity: 1,
-                        y: 0
+                        opacity: 1
                     },
                     viewport: {
-                        once: true
+                        once: true,
+                        margin: "-50px"
                     },
                     transition: {
-                        duration: 0.6
+                        duration: 0.4
                     },
                     className: "max-w-3xl mx-auto text-center",
                     children: [
@@ -639,19 +664,17 @@ const CTA = ()=>{
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                             initial: {
-                                opacity: 0,
-                                y: 20
+                                opacity: 0
                             },
                             whileInView: {
-                                opacity: 1,
-                                y: 0
+                                opacity: 1
                             },
                             viewport: {
                                 once: true
                             },
                             transition: {
-                                duration: 0.6,
-                                delay: 0.2
+                                duration: 0.4,
+                                delay: 0.1
                             },
                             className: "mt-10",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -772,15 +795,13 @@ const AboutContent = ()=>{
                     className: "container mx-auto px-6",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
                         initial: {
-                            opacity: 0,
-                            y: 30
+                            opacity: 0
                         },
                         animate: {
-                            opacity: 1,
-                            y: 0
+                            opacity: 1
                         },
                         transition: {
-                            duration: 0.8
+                            duration: 0.5
                         },
                         className: "max-w-3xl text-4xl md:text-5xl lg:text-6xl font-display font-medium text-primary-foreground leading-tight",
                         children: t("about.subtitle")
@@ -808,18 +829,17 @@ const AboutContent = ()=>{
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                 initial: {
-                                    opacity: 0,
-                                    x: -30
+                                    opacity: 0
                                 },
                                 whileInView: {
-                                    opacity: 1,
-                                    x: 0
+                                    opacity: 1
                                 },
                                 viewport: {
-                                    once: true
+                                    once: true,
+                                    margin: "-50px"
                                 },
                                 transition: {
-                                    duration: 0.6
+                                    duration: 0.4
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -852,19 +872,18 @@ const AboutContent = ()=>{
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                 initial: {
-                                    opacity: 0,
-                                    x: 30
+                                    opacity: 0
                                 },
                                 whileInView: {
-                                    opacity: 1,
-                                    x: 0
+                                    opacity: 1
                                 },
                                 viewport: {
-                                    once: true
+                                    once: true,
+                                    margin: "-50px"
                                 },
                                 transition: {
-                                    duration: 0.6,
-                                    delay: 0.2
+                                    duration: 0.4,
+                                    delay: 0.1
                                 },
                                 className: "bg-secondary rounded-2xl p-8 md:p-12",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -920,18 +939,17 @@ const AboutContent = ()=>{
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                             initial: {
-                                opacity: 0,
-                                y: 20
+                                opacity: 0
                             },
                             whileInView: {
-                                opacity: 1,
-                                y: 0
+                                opacity: 1
                             },
                             viewport: {
-                                once: true
+                                once: true,
+                                margin: "-50px"
                             },
                             transition: {
-                                duration: 0.6
+                                duration: 0.4
                             },
                             className: "text-center mb-16",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -951,19 +969,18 @@ const AboutContent = ()=>{
                             className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8",
                             children: values.map((value, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                     initial: {
-                                        opacity: 0,
-                                        y: 30
+                                        opacity: 0
                                     },
                                     whileInView: {
-                                        opacity: 1,
-                                        y: 0
+                                        opacity: 1
                                     },
                                     viewport: {
-                                        once: true
+                                        once: true,
+                                        margin: "-30px"
                                     },
                                     transition: {
-                                        duration: 0.6,
-                                        delay: index * 0.1
+                                        duration: 0.4,
+                                        delay: index * 0.05
                                     },
                                     className: "bg-card rounded-2xl p-8 text-center",
                                     children: [
@@ -998,7 +1015,7 @@ const AboutContent = ()=>{
                                             columnNumber: 17
                                         }, this)
                                     ]
-                                }, value.title, true, {
+                                }, index, true, {
                                     fileName: "[project]/components/pages/AboutContent.tsx",
                                     lineNumber: 101,
                                     columnNumber: 15

@@ -175,19 +175,27 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$pages$2f$About
 ;
 ;
 const metadata = {
-    title: "Meist - MarVar",
-    description: "Oleme väike, kuid pühendunud meeskond, kes usub, et hea veebileht on rohkem kui lihtsalt ilus disain."
+    title: "Meist",
+    description: "Oleme väike, kuid pühendunud meeskond, kes usub, et hea veebileht on rohkem kui lihtsalt ilus disain. MARVAR Tarkvara OÜ - Tallinn, Eesti.",
+    openGraph: {
+        title: "Meist - MarVar",
+        description: "Oleme väike, kuid pühendunud meeskond, kes usub, et hea veebileht on rohkem kui lihtsalt ilus disain.",
+        url: "https://marvar.ee/meist"
+    },
+    alternates: {
+        canonical: "https://marvar.ee/meist"
+    }
 };
 function AboutPage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$layout$2f$Layout$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$pages$2f$AboutContent$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
             fileName: "[project]/app/meist/page.tsx",
-            lineNumber: 12,
+            lineNumber: 21,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/meist/page.tsx",
-        lineNumber: 11,
+        lineNumber: 20,
         columnNumber: 5
     }, this);
 }
@@ -254,6 +262,7 @@ const tree = [
         ]
     },
     {
+        metadata: {},
         "layout": [
             ()=>__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$layout$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$2c$__Next$2e$js__server__component$29$__,
             "[project]/app/layout.tsx"
